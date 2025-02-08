@@ -10,6 +10,20 @@
 
 <style> 
 
+#myheading{
+    text-align: center;
+    color: darkmagenta;
+}
+
+
+#paragraph {
+
+        color: azure;
+        background-color: bisque;
+        text-align: center;
+
+}
+
 p{
     color: blueviolet
 }
@@ -18,10 +32,7 @@ h1{
 
 }
 
-#dialog{
-    color: beige;
-    text-align: center;
-}
+
 </style>
 
 
@@ -32,8 +43,8 @@ h1{
 <h1>This is My First Website</h1>
 <h2 style= "color: crimson;"> Hello and Welcome! </h2>
 
-<a href="https://www.youtube.com/watch?v=gN6NlFwblHw&ab_channel=ExpressionsOozing"> This is a video I guess.</a> <br>
-<b style="color: blue; font-size: 30px"> This is a random Chatgpt paragraph</b> <br>
+<a href="https://www.youtube.com/watch?v=gN6NlFwblHw&ab_channel=ExpressionsOozing"> This is a video I guess.</a> <br> <br>
+<b style="color: blue; font-size: 30px"> This is a random Chatgpt paragraph</b> <br> <br>
 
 <strong style="font-size: 20px;"> The Forbidden Art of the Sandwich </strong> <br>
 
@@ -51,9 +62,19 @@ h1{
     A true sandwich is built with the precision of a master architect, not lazily stacked like a toddler’s LEGO tower.
     You don’t eat a sandwich. You experience it. And until you understand that, you are but a mere peasant in the kingdom of gastronomy. Now go forth, and do better.
     </pre>
-
     <hr>
 
+    <h3 id="myheading" style="text-align: center;"> "The Eternal Struggle of the USB Plug"</h3>
+
+    <p id="paragraph">There exists a universal truth known to all of humankind: no matter how many times you attempt to insert a USB plug, you will always get it wrong on the first try. 
+        You approach the port with confidence, align the connector, and—denied. Naturally, you flip it over, certain that this is the correct orientation.
+         Rejected again. In sheer desperation, you return to your original position, only to find that now, mysteriously, it fits. Scientists may never understand this phenomenon. 
+         Philosophers have pondered it for generations. But one thing is certain—USB plugs exist in a quantum state of perpetual defiance, forever mocking our mortal attempts at connectivity.</p>
+
+
+
+
+        <hr>
     <em>Emphasized text</em><br>
         <var>variable x</var><br>
         <cite>citation</cite><br>
@@ -61,7 +82,7 @@ h1{
     </section>
     </article>
 
-
+    <hr>
     <nav> A letter <sub> Letter </sub> <sup> Letter </sup>  </nav>
 
     
@@ -69,29 +90,39 @@ h1{
         <var>variable x</var><br>
         <cite>citation</cite><br>
         <dfn>definition</dfn>
+
+        <section>
+            <code>code</code><br>
+            <samp>Sample output from a computer program</samp><br>
+            <kbd>Keyboard input</kbd>
+        </section>
 </section>
     
 
     <h2> Here is a random Quote</h2>
-    <blockquote> "The cure for anything is salt water: sweat, tears, or the sea." — Isak Dinesen</blockquote>
+
+
+    <blockquote cite="https://www.brainyquote.com/quotes/princess_diana_154326?src=t_random/index.html">
+        Carry out a random act of kindness, with no expectation of reward, safe in the knowledge that one day someone might do the same for you.
+         </blockquote>
     
 
     <hr>
 <figure>
 
-    <img src="cage.gif" alt="GIF of yk">
+    <img src="cage.gif" alt="GIF of cage">
     <figcaption>"This is a GIF I guess.</figcaption>
 
 </figure>
 
 <section>
     <figure>
-        <img src="https://s3.zerochan.net/Frieren.240.4035773.avif" alt="Frieren" /></a>
-        <figcaption>Frieren</figcaption>
+        <img src="https://s3.zerochan.net/Boku.no.Hero.Academia%3A.World.Heroes%27.Mission.240.3274718.avif" alt="Boku no Hero Academia: World Heroes&#039; Mission" /></a>
+        <figcaption>My Hero Academia thingy</figcaption>
     </figure>
 </section>
 
-
+<article>
 <section>
     <h3 style="color: darkmagenta;"> Random List</h3>
     
@@ -118,8 +149,19 @@ h1{
 </ol>
 </section>
 
-</article>
 
+
+<p>Description List</p>
+    <dl>Coffee</dl>
+    <dt>Black Hot drink, brown drink with milk</dt>
+    <dl>Milk</dl>
+    <dt>White cold drink that makes coffee brown</dt>
+
+
+
+
+
+<hr>
 <section>
     <details>
         <summary>Hobbies</summary>
@@ -134,14 +176,18 @@ h1{
     </details>
  </section>
 
- <dialog id="dialog">
- This is a dialog
- <a href="javascript:mydialog.removeAttribute('open')">close</a>
+ <dialog>
+    This is a dialog
+    <a href="javascript:mydialog.removeAttribute('open')">close</a>
 </dialog>
 
 <a href="javascript:document.querySelector('#mydialog').setAttribute('open', true)">
- Open Dialog
+    Open Dialog
 </a>
+</article>
+
 
 </body>
 </html>
+
+
